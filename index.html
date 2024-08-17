@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ITHous</title>
+  <link rel="icon" href="./logo/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="/manifest.json">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Popper.js 1.x -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body class="home-page">
+  <div class="main-container">
+    <header class="header">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <!-- Логотип -->
+          <div class="logo">
+            <a href="/">
+              <img src="./logo/logo.png" alt="Логотип" class="logo-img">
+            </a>
+          </div>
+          <!-- Навигационное меню -->
+          <nav class="navbar navbar-expand-md">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-translate="home">Головна</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-translate="courses">Курси</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-translate="reviews">Відгуки</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-translate="contacts">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Контейнер для кнопки входа и выбора языка -->
+          <div class="d-flex align-items-center">
+            <!-- Кнопка авторизации -->
+            <div class="login-button">
+              <a href="/login.html" target="_blank" class="btn btn-light btn-icon" data-translate="login">
+                <i class="fas fa-user"></i> Вхід
+              </a>
+            </div>
+            <!-- Выбор языка -->
+            <div class="dropdown language-dropdown ml-2">
+              <button class="btn btn-light dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <!-- Убрали иконку флага -->
+                <span id="selected-language">Uk</span>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                <a class="dropdown-item" href="#" data-lang="uk">Uk</a>
+                <a class="dropdown-item" href="#" data-lang="ru">Ru</a>
+                <a class="dropdown-item" href="#" data-lang="en">En</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <script src="./js/home.js"></script>
+  <script src="./js/scripts.js"></script>
+</body>
+
+</html>

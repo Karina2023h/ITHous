@@ -1,0 +1,183 @@
+/* styles.css */
+
+/* Основной контейнер */
+.main-container {
+  background-color: #f8f9fa;
+}
+
+/* Основные стили для хедера */
+.header {
+  background: linear-gradient(90deg, #ffffff, #bc7bf5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Добавлены отступы для лучшего вида */
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo-img {
+  height: 90px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Стили для навигационного меню */
+.navbar-nav .nav-item .nav-link {
+  color: #7714bd;
+  /* Фиолетовый цвет ссылок */
+  margin-right: 20px;
+  /* Уменьшение отступов между ссылками */
+  font-size: 17px;
+  /* Уменьшение размера шрифта */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #ffffff;
+  /* Светло-фиолетовый цвет ссылок при наведении */
+}
+
+/* Стили для кнопки авторизации */
+.login-button .btn-icon {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 45px;
+  padding: 8px 15px;
+  /* Уменьшение отступов для лучшего вида */
+}
+
+.login-button .btn-icon i {
+  margin-right: 6px;
+  /* Уменьшение отступа между иконкой и текстом */
+}
+
+.btn-light {
+  background-color: #ffffff;
+  border: 1px solid #6a0dad;
+  color: #6a0dad;
+}
+
+.btn-light:hover {
+  background-color: #f0f0f0;
+  color: #5a0c8a;
+}
+
+/* Стили для выпадающего списка языка */
+.language-dropdown .dropdown-toggle {
+  display: flex;
+  align-items: center;
+}
+
+
+.language-dropdown .dropdown-menu {
+  min-width: 150px;
+}
+
+.language-dropdown .dropdown-item {
+  display: flex;
+  align-items: center;
+}
+
+.language-dropdown .dropdown-item .language-flag {
+  width: 20px;
+  height: 14px;
+  margin-right: 8px;
+  /* Отступ между флагом и текстом */
+}
+
+/* Добавьте эти стили в styles.css */
+
+/* Контейнер для входа и выбора языка */
+.d-flex.align-items-center {
+  display: flex;
+  align-items: center;
+}
+
+/* Добавляем отступ между кнопкой входа и выбором языка */
+.ml-2 {
+  margin-left: 25px !important;
+  /* Отступ примерно 10 пикселей */
+}
+
+/* Сужаем ширину выпадающего списка */
+.language-dropdown .dropdown-menu {
+  min-width: auto;
+  /* Убираем минимальную ширину */
+  width: auto;
+  /* Автоматическая ширина */
+}
+
+/* Центрирование текста в кнопке выбора языка */
+.language-dropdown .btn {
+  padding: 8px 15px;
+  text-align: center;
+}
+
+/* Отключаем кнопку выбора языка на мобильных устройствах */
+.language-dropdown .dropdown-toggle::after {
+  margin-left: 5px;
+  /* Немного сдвигаем стрелку вниз от текста */
+}
+
+/* Общие стили для форм входа и регистрации */
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для кнопок на странице авторизации */
+.btn-auth {
+  background-color: #6f42c1;
+  /* Фиолетовый цвет фона */
+  color: #ffffff;
+  /* Белый цвет текста */
+  border: none;
+  /* Убираем границу */
+}
+
+.btn-auth:hover {
+  background-color: #5a2a91;
+  /* Темнее фиолетовый при наведении */
+  color: #ffffff;
+  /* Белый цвет текста при наведении */
+}
+
+/* Стили для кнопки регистрации */
+.btn-register {
+  background-color: #6f42c1;
+  /* Фиолетовый цвет фона */
+  color: #ffffff;
+  /* Белый цвет текста */
+  border: none;
+  /* Убираем границу */
+}
+
+.btn-register:hover {
+  background-color: #5a2a91;
+  /* Темнее фиолетовый при наведении */
+  color: #ffffff;
+  /* Белый цвет текста при наведении */
+}
+
+/* Стили для кнопок в активных вкладках */
+.nav-link.active {
+  color: #6f42c1;
+  /* Фиолетовый цвет текста для активной вкладки */
+  border-color: #6f42c1;
+  /* Фиолетовая граница активной вкладки */
+}
+
+.nav-link {
+  color: #6f42c1;
+  /* Фиолетовый цвет текста для неактивных вкладок */
+}
+
+.nav-link:hover {
+  color: #5a2a91;
+  /* Темнее фиолетовый при наведении на вкладки */
+}
