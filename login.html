@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
-<body style=" background: linear-gradient(90deg, #ffffff, #bc7bf5);" class="auth-page">
+<body style="background: linear-gradient(90deg, #ffffff, #bc7bf5);" class="auth-page">
   <div class="main-container">
     <header class="header">
       <div class="container">
@@ -54,7 +54,6 @@
             <div class="dropdown language-dropdown ml-2">
               <button class="btn btn-light dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-                <!-- Убрали иконку флага -->
                 <span id="selected-language">Uk</span>
               </button>
               <div class="dropdown-menu" aria-labelledby="languageDropdown">
@@ -88,7 +87,7 @@
         <div class="tab-content mt-4" id="authTabsContent">
           <!-- Форма входа -->
           <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
-            <form class="mt-4">
+            <form class="mt-4" action="login.php" method="POST">
               <div class="form-group">
                 <label for="loginEmail" data-translate="email">Email</label>
                 <input type="email" class="form-control" id="loginEmail" placeholder="Введіть email">
@@ -103,7 +102,7 @@
 
           <!-- Форма регистрации -->
           <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
-            <form class="mt-4">
+            <form class="mt-4" action="register.php" method="POST">
               <div class="form-group">
                 <label for="registerEmail" data-translate="email">Email</label>
                 <input type="email" class="form-control" id="registerEmail" placeholder="Введіть email">
@@ -120,13 +119,35 @@
               <button type="submit" class="btn btn-register btn-block" data-translate="register">Реєстрація</button>
             </form>
           </div>
-
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="./js/auth.js"></script>
-    <script src="./js/scripts.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const registerForm = document.querySelector("form[action='register.php']");
+      const passwordInput = document.getElementById("registerPassword");
+      const confirmPasswordInput = document.getElementById("registerConfirmPassword");
+
+      registerForm.addEventListener("submit", function (event) {
+        if (passwordInput.value !== confirmPasswordInput.value) {
+          event.preventDefault();
+          alert("Паролі не співпадають.");
+        }
+      });
+    });
+
+    function showAlert(message, type) {
+      const alertDiv = document.createElement('div');
+      alertDiv.className = `alert alert-${type} mt-3`;
+      alertDiv.innerText = message;
+      document.querySelector('.container').prepend(alertDiv);
+    };
+  </script>
+
+  <script src="./js/auth.js"></script>
+  <script src="./js/scripts.js"></script>
 </body>
 
 </html>
