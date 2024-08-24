@@ -68,30 +68,30 @@ document.addEventListener("DOMContentLoaded", function () {
       courseTitle3: "Консультації",
       courseDesc3:
         "Я відповім на всі ваші запитання та допоможу з вибором шляху в IT. Ми разом проаналізуємо ваші сильні сторони, визначимо цілі, та складемо індивідуальний план розвитку.",
-      courseBtn3: "Записатись на консультацію",
-      sectionTitle: "Обирайте свій шлях в IT",
-      sectionDescription:
+      courseBtn3: "Замовити консультацію",
+      sectionTitle1: "Обирайте свій шлях в IT",
+      sectionDescription1:
         "Пропоную три різних курси, які допоможуть вам почати або розвинути свою кар'єру в IT. Від основ до повного стеку розробки.",
-      courseTitle1: "БАЗОВИЙ КУРС",
-      courseDesc1:
+      courseTitle4: "БАЗОВИЙ КУРС",
+      courseDesc4:
         "Опануйте основи веб-розробки, вивчаючи HTML та CSS. Ідеально підходить для початківців.",
       courseDuration1: "Термін вивчення: 3 місяці",
       coursePrice1: "Вартість: 5000 грн",
-      courseBtn1: "Дізнатись більше",
-      courseTitle2: "FRONT-END КУРС",
-      courseDesc2:
+      courseBtn4: "Дізнатись більше",
+      courseTitle5: "FRONT-END КУРС",
+      courseDesc5:
         "Поглиблюйте свої знання, додаючи JavaScript до вашого арсеналу веб-розробника. Перший крок до інтерактивних сайтів.",
       courseDuration2: "Термін вивчення: 6 місяців",
       coursePrice2: "Вартість: 10000 грн",
-      courseBtn2: "Дізнатись більше",
-      courseTitle3: "FULL-STACK КУРС",
-      courseDesc3:
+      courseBtn5: "Дізнатись більше",
+      courseTitle6: "FULL-STACK КУРС",
+      courseDesc6:
         "Стати повноцінним Full Stack розробником, освоюючи React та Node.js. Для тих, хто прагне стати професіоналом у створенні сучасних веб-додатків.",
       courseDuration3: "Термін вивчення: 9 місяців",
       coursePrice3: "Вартість: 15000 грн",
-      courseBtn3: "Дізнатись більше",
-      sectionTitle: "Ваша дорога до успіху",
-      sectionDescription:
+      courseBtn6: "Дізнатись більше",
+      sectionTitle3: "Ваша дорога до успіху",
+      sectionDescription2:
         "Перспективи та можливості в сучасній IT-індустрії для вас і для України.",
       salary: "$1500",
       salaryDescription:
@@ -181,30 +181,30 @@ document.addEventListener("DOMContentLoaded", function () {
       courseTitle3: "Консультации",
       courseDesc3:
         "Я отвечу на все ваши вопросы и помогу с выбором пути в IT. Мы вместе проанализируем ваши сильные стороны, определим цели и составим индивидуальный план развития.",
-      courseBtn3: "Записаться на консультацию",
-      sectionTitle: "Выберите свой путь в IT",
-      sectionDescription:
+      courseBtn3: "Заказать консультацию",
+      sectionTitle1: "Выберите свой путь в IT",
+      sectionDescription1:
         "Предлагаю три разных курса, которые помогут вам начать или развить свою карьеру в IT. От основ до полного стека разработки.",
-      courseTitle1: "БАЗОВЫЙ КУРС",
-      courseDesc1:
+      courseTitle4: "БАЗОВЫЙ КУРС",
+      courseDesc4:
         "Освойте основы веб-разработки, изучая HTML и CSS. Идеально подходит для начинающих.",
       courseDuration1: "Срок обучения: 3 месяца",
       coursePrice1: "Стоимость: 5000 грн",
-      courseBtn1: "Узнать больше",
-      courseTitle2: "FRONT-END КУРС",
-      courseDesc2:
+      courseBtn4: "Узнать больше",
+      courseTitle5: "FRONT-END КУРС",
+      courseDesc5:
         "Углубляйте свои знания, добавляя JavaScript в ваш арсенал веб-разработчика. Первый шаг к интерактивным сайтам.",
       courseDuration2: "Срок обучения: 6 месяцев",
       coursePrice2: "Стоимость: 10000 грн",
-      courseBtn2: "Узнать больше",
-      courseTitle3: "FULL-STACK КУРС",
-      courseDesc3:
+      courseBtn5: "Узнать больше",
+      courseTitle6: "FULL-STACK КУРС",
+      courseDesc6:
         "Станьте полноценным Full Stack разработчиком, осваивая React и Node.js. Для тех, кто стремится стать профессионалом в создании современных веб-приложений.",
       courseDuration3: "Срок обучения: 9 месяцев",
       coursePrice3: "Стоимость: 15000 грн",
-      courseBtn3: "Узнать больше",
-      sectionTitle: "Ваш путь к успеху",
-      sectionDescription:
+      courseBtn6: "Узнать больше",
+      sectionTitle3: "Ваш путь к успеху",
+      sectionDescription2:
         "Перспективы и возможности в современной IT-индустрии для вас и для Украины.",
       salary: "$1500",
       salaryDescription:
@@ -294,30 +294,30 @@ document.addEventListener("DOMContentLoaded", function () {
       courseTitle3: "Consultations",
       courseDesc3:
         "I will answer all your questions and help you choose your path in IT. Together, we will analyze your strengths, set goals, and create an individual development plan.",
-      courseBtn3: "Book a Consultation",
-      sectionTitle: "Choose Your Path in IT",
-      sectionDescription:
+      courseBtn3: "Call a Consultation",
+      sectionTitle1: "Choose Your Path in IT",
+      sectionDescription1:
         "Offering three different courses to help you start or advance your IT career. From basics to full-stack development.",
-      courseTitle1: "BASIC COURSE",
-      courseDesc1:
+      courseTitle4: "BASIC COURSE",
+      courseDesc4:
         "Master the basics of web development by learning HTML and CSS. Perfect for beginners.",
       courseDuration1: "Study Duration: 3 months",
       coursePrice1: "Price: 5000 UAH",
-      courseBtn1: "Learn More",
-      courseTitle2: "FRONT-END COURSE",
-      courseDesc2:
+      courseBtn4: "Learn More",
+      courseTitle5: "FRONT-END COURSE",
+      courseDesc5:
         "Deepen your knowledge by adding JavaScript to your web development toolkit. The first step towards interactive websites.",
       courseDuration2: "Study Duration: 6 months",
       coursePrice2: "Price: 10000 UAH",
-      courseBtn2: "Learn More",
-      courseTitle3: "FULL-STACK COURSE",
-      courseDesc3:
+      courseBtn5: "Learn More",
+      courseTitle6: "FULL-STACK COURSE",
+      courseDesc6:
         "Become a full-fledged Full Stack developer by mastering React and Node.js. For those aiming to become professionals in building modern web applications.",
       courseDuration3: "Study Duration: 9 months",
       coursePrice3: "Price: 15000 UAH",
-      courseBtn3: "Learn More",
-      sectionTitle: "Your Path to Success",
-      sectionDescription:
+      courseBtn6: "Learn More",
+      sectionTitle3: "Your Path to Success",
+      sectionDescription2:
         "Prospects and opportunities in the modern IT industry for you and for Ukraine.",
       salary: "$1500",
       salaryDescription:
