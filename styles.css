@@ -1,17 +1,18 @@
 /* styles.css */
 
-/* Основной контейнер */
-.main-container {
-  background-color: #f8f9fa;
-}
 
 /* Основные стили для хедера */
+/* Основні стилі для хедера */
 .header {
-  background: linear-gradient(90deg, #ffffff, #bc7bf5);
+  background: #6a0dad;
+  /* Фіолетовий фон */
+  color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* Добавлены отступы для лучшего вида */
+  padding: 10px 20px;
+  height: 80px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .header .logo {
@@ -20,106 +21,89 @@
 }
 
 .header .logo-img {
-  height: 90px;
+  height: 140px;
+  /* Зменшений розмір логотипу */
   width: auto;
-  object-fit: contain;
 }
 
-/* Стили для навигационного меню */
+/* Стилі для навігаційного меню */
 .navbar-nav .nav-item .nav-link {
-  color: #7714bd;
-  /* Фиолетовый цвет ссылок */
+  color: #ffffff;
+  /* Білий колір тексту */
   margin-right: 20px;
-  /* Уменьшение отступов между ссылками */
-  font-size: 17px;
-  /* Уменьшение размера шрифта */
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: color 0.3s;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-  color: #ffffff;
-  /* Светло-фиолетовый цвет ссылок при наведении */
+  color: #f0f0f0;
+  /* Світло-сірий колір при наведенні */
 }
 
-/* Стили для кнопки авторизации */
+/* Стилі для кнопки авторизації */
 .login-button .btn-icon {
-  display: inline-flex;
-  align-items: center;
-  border-radius: 45px;
-  padding: 8px 15px;
-  /* Уменьшение отступов для лучшего вида */
+  border-radius: 25px;
+  padding: 10px 20px;
 }
 
-.login-button .btn-icon i {
-  margin-right: 6px;
-  /* Уменьшение отступа между иконкой и текстом */
-}
-
-.btn-light {
+.login-button .btn-primary {
   background-color: #ffffff;
+  color: #6a0dad;
   border: 1px solid #6a0dad;
+}
+
+.login-button .btn-primary:hover {
+  background-color: #f0f0f0;
   color: #6a0dad;
 }
 
-.btn-light:hover {
-  background-color: #f0f0f0;
-  color: #5a0c8a;
-}
-
-/* Стили для выпадающего списка языка */
+/* Стилі для випадаючого списку мови */
 .language-dropdown .dropdown-toggle {
-  display: flex;
-  align-items: center;
+  background-color: #6a0dad;
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
 }
-
 
 .language-dropdown .dropdown-menu {
-  min-width: 150px;
+  border-radius: 8px;
 }
 
 .language-dropdown .dropdown-item {
-  display: flex;
-  align-items: center;
+  color: #6a0dad;
 }
 
-.language-dropdown .dropdown-item .language-flag {
-  width: 20px;
-  height: 14px;
-  margin-right: 8px;
-  /* Отступ между флагом и текстом */
-}
-
-/* Добавьте эти стили в styles.css */
-
-/* Контейнер для входа и выбора языка */
-.d-flex.align-items-center {
-  display: flex;
-  align-items: center;
-}
-
-/* Добавляем отступ между кнопкой входа и выбором языка */
-.ml-2 {
-  margin-left: 25px !important;
-  /* Отступ примерно 10 пикселей */
-}
-
-/* Сужаем ширину выпадающего списка */
-.language-dropdown .dropdown-menu {
-  min-width: auto;
-  /* Убираем минимальную ширину */
-  width: auto;
-  /* Автоматическая ширина */
-}
-
-/* Центрирование текста в кнопке выбора языка */
-.language-dropdown .btn {
-  padding: 8px 15px;
-  text-align: center;
+.language-dropdown .dropdown-item:hover {
+  background-color: #e0e0e0;
+  color: #6a0dad;
 }
 
 /* Отключаем кнопку выбора языка на мобильных устройствах */
 .language-dropdown .dropdown-toggle::after {
   margin-left: 5px;
-  /* Немного сдвигаем стрелку вниз от текста */
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-nav {
+    margin-top: 10px;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    margin-right: 10px;
+  }
+
+  .login-button,
+  .language-dropdown {
+    margin-top: 10px;
+  }
 }
 
 /* Общие стили для форм входа и регистрации */
@@ -180,4 +164,616 @@ form {
 .nav-link:hover {
   color: #5a2a91;
   /* Темнее фиолетовый при наведении на вкладки */
+}
+
+/* Общие стили остаются как есть, добавляем только новые или измененные */
+
+/* Стили для hero секции */
+.hero {
+  padding: 10px 20px;
+  background-color: #6a0dad;
+  color: white;
+}
+
+/* Заголовок и текст в hero секции */
+.hero h1 {
+  font-size: 76px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+/* Кнопка в hero секции */
+.hero .btn-primary {
+  background-color: white;
+  color: #6a0dad;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.hero .btn-primary:hover {
+  background-color: #f0f0f0;
+  color: #6a0dad;
+}
+
+/* Выравнивание текста и изображений в hero секции */
+.hero-images {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.hero-images img {
+  max-width: 100%;
+  height: auto;
+  animation: moveUpDown 2s infinite;
+}
+
+/* Анимация движения вверх и вниз для изображения */
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Стили для маленьких картинок */
+.small-images {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: absolute;
+  z-index: 1;
+  margin-top: 70px;
+  margin-left: -45px;
+}
+
+.small-image {
+  width: 180px;
+  /* Размер картинок */
+  height: auto;
+  margin: 0 15px;
+
+
+}
+
+/* Стили для текста в hero секции */
+.hero .col-md-6 {
+  text-align: left;
+}
+
+/* Дополнительная стилизация для маленьких экранов */
+@media (max-width: 768px) {
+  .hero .col-md-6 {
+    text-align: center;
+  }
+
+  .hero-images {
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+  }
+
+  .small-images {
+    justify-content: center;
+    margin-bottom: 10px;
+    /* Уменьшение отступа для маленьких экранов */
+  }
+
+  .small-image {
+    width: 40px;
+    /* Уменьшение размера картинок для маленьких экранов */
+    margin: 0 5px;
+    /* Уменьшение отступов между картинками */
+  }
+}
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 80%;
+  max-width: 418px;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  font-size: 27px;
+  cursor: pointer;
+  color: black;
+}
+
+.contact-options {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+}
+
+.contact-options li {
+  margin: 10px 0;
+
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #810799;
+  font-size: 55px;
+}
+
+.contact-link:hover {
+  color: #210427;
+}
+
+.d-none {
+  display: none;
+}
+
+/* блок 1 */
+
+/* Секція "Від початківця до успішної кар'єри в IT" */
+.path-to-it {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.path-to-it h2 {
+  font-size: 54px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.path-to-it p {
+  font-size: 24px;
+  margin-bottom: 75px;
+  color: #434343;
+}
+
+/* Секція "Від початківця до успішної кар'єри в IT" */
+.path-to-it {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.path-to-it h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.path-to-it p {
+  font-size: 20px;
+  margin-bottom: 50px;
+  color: #666;
+}
+
+/* Стилі для карток */
+.card {
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Висота картинок */
+.card-img-top {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 200px;
+  /* Встановлюємо однакову висоту для всіх картинок */
+  object-fit: cover;
+  /* Зберігає пропорції і обрізає зображення */
+}
+
+/* Вміст картки */
+.card-body {
+  padding: 20px;
+  flex-grow: 1;
+  /* Займає доступний простір */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-body h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.card-body p {
+  font-size: 16px;
+  color: #121212;
+  margin-bottom: 20px;
+}
+
+.btn-outline-primary {
+  border-color: #6a0dad;
+  color: #6a0dad;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.btn-outline-primary:hover {
+  background-color: #6a0dad;
+  color: white;
+}
+
+.courses-overview {
+  background-color: #6a0dad;
+  /* Фиолетовый фон */
+  padding: 60px 0;
+  color: white;
+}
+
+.courses-overview .section-title {
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.courses-overview .section-description {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.courses-overview .course-card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 20px;
+  height: 100%;
+  color: white;
+  text-align: center;
+}
+
+.courses-overview .course-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.courses-overview .course-title {
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.courses-overview .course-description {
+  font-size: 17px;
+  margin-bottom: 20px;
+  color: rgb(11, 11, 11);
+}
+
+/* Стили для деталей курса */
+.course-details {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.course-details p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.courses-overview .btn-outline-primary {
+  color: white;
+  border: 2px solid white;
+}
+
+.courses-overview .btn-outline-primary:hover {
+  background-color: white;
+  color: #6a0dad;
+  /* Цвет текста при наведении */
+}
+
+/* Градиенты для блоков */
+.course-card.basic {
+  background: linear-gradient(135deg, #f9a77d, #f56b2a);
+  /* Зеленый градиент */
+}
+
+.course-card.front-end {
+  background: linear-gradient(135deg, #a3c9f1, #68a7e2);
+  /* Желтый градиент */
+}
+
+.course-card.full-stack {
+  background: linear-gradient(135deg, #d7a7f7, #9c5fa1);
+  /* Красный градиент */
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .courses-overview .section-title {
+    font-size: 28px;
+  }
+
+  .courses-overview .section-description {
+    font-size: 16px;
+  }
+
+  .courses-overview .course-title {
+    font-size: 20px;
+  }
+
+  .courses-overview .course-description {
+    font-size: 14px;
+  }
+}
+
+/* блок 3 */
+
+/* Стилі для блоку IT та Digital */
+.it-future {
+  background-color: #f4f4f4;
+  padding: 60px 0;
+}
+
+.it-future .text-center h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.it-future .text-center p {
+  font-size: 18px;
+  color: #333;
+}
+
+.stat-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.stat-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.stat-description {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Фоны для карточек */
+.bg-light-green {
+  background: linear-gradient(135deg, #a4d3a8, #6cbf28);
+}
+
+.bg-light-yellow {
+  background: linear-gradient(135deg, #fdfd96, #f9e16c);
+}
+
+.bg-light-red {
+  background: linear-gradient(135deg, #f7a1a1, #e94e77);
+}
+
+.bg-light-blue {
+  background: linear-gradient(135deg, #a3c9f1, #68a7e2);
+}
+
+.bg-light-purple {
+  background: linear-gradient(135deg, #d7a7f7, #9c5fa1);
+}
+
+.bg-light-orange {
+  background: linear-gradient(135deg, #f9a77d, #f56b2a);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .stat-title {
+    font-size: 28px;
+  }
+
+  .stat-description {
+    font-size: 14px;
+  }
+}
+
+/* блок 5 */
+
+/* Стилі для секції про курси */
+.course-intro {
+  background-color: #6a0dad;
+  /* Фіолетовий фон */
+  padding: 60px 0;
+  color: white;
+}
+
+.course-intro .text-center h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.course-intro .text-center p {
+  font-size: 18px;
+  color: #f0f0f0;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.course-details {
+  background-color: #ffffff;
+  /* Білий фон для карток */
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-heading {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.course-description {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.course-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.course-list li {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.course-list li strong {
+  color: #333;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  .course-heading {
+    font-size: 24px;
+  }
+
+  .course-description {
+    font-size: 16px;
+  }
+
+  .course-list li {
+    font-size: 14px;
+  }
+}
+
+/* футер */
+
+/* Стилі для футера */
+.footer {
+  background-color: #2a1a69;
+  /* Темний фіолетовий фон */
+  color: white;
+  padding: 40px 0;
+}
+
+.footer h3 {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer p,
+.footer ul {
+  font-size: 16px;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+.footer-contact,
+.footer-social {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-contact li,
+.footer-social li {
+  margin-bottom: 10px;
+}
+
+.footer-contact i,
+.footer-social i {
+  margin-right: 10px;
+}
+
+.footer-social a {
+  color: #e0e0e0;
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer .text-center {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 15px;
+  }
+
+  .footer h3 {
+    font-size: 20px;
+  }
+
+  .footer p,
+  .footer ul {
+    font-size: 14px;
+  }
 }

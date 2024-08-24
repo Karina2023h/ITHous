@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ITHous</title>
-  <link rel="icon" href="./logo/logo.png" type="image/x-icon">
+  <link rel="icon" href="./logo/lg.png" type="image/x-icon">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="manifest" href="/manifest.json">
@@ -16,7 +16,8 @@
   <!-- Bootstrap JS -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 
 <body class="home-page">
@@ -27,7 +28,7 @@
           <!-- Логотип -->
           <div class="logo">
             <a href="index.html">
-              <img src="./logo/logo.png" alt="Логотип" class="logo-img">
+              <img src="./logo/lg.png" alt="Логотип" class="logo-img">
             </a>
           </div>
           <!-- Навигационное меню -->
@@ -51,15 +52,14 @@
           <div class="d-flex align-items-center">
             <!-- Кнопка авторизации -->
             <div class="login-button">
-              <a href="login.html" target="_blank" class="btn btn-light btn-icon" data-translate="login">
+              <a href="login.html" target="_blank" class="btn btn-primary btn-icon" data-translate="login">
                 <i class="fas fa-user"></i> Вхід
               </a>
             </div>
             <!-- Выбор языка -->
-            <div class="dropdown language-dropdown ml-2">
-              <button class="btn btn-light dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown"
+            <div class="dropdown language-dropdown ml-3">
+              <button class="btn btn-primary dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-                <!-- Убрали иконку флага -->
                 <span id="selected-language">Uk</span>
               </button>
               <div class="dropdown-menu" aria-labelledby="languageDropdown">
@@ -72,8 +72,305 @@
         </div>
       </div>
     </header>
-  </div>
 
+    <!-- Hero секція -->
+    <section class="hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h1 data-translate="textsty">Створи Майбутнє з ITHous</h1>
+            <p data-translate="textxadd">Приєднуйтесь до провідної платформи, щоб освоїти навички майбутнього та зробити
+              перший крок до успішної кар'єри в IT.</p>
+            <a href="#" class="btn btn-primary" data-translate="consultationButton" id="consultationButton">Безкоштовна
+              консультація</a>
+            <div id="contactModal" class="modal d-none">
+              <div class="modal-content">
+                <span class="close-button" id="closeModal">&times;</span>
+                <h2 data-translate="selectContactMethod"
+                  style="margin-top: 5px; font-size: 28px; color: #0c0c0c; margin-bottom: -15px;">Виберіть спосіб
+                  зв'язку
+                </h2>
+                <ul class="contact-options">
+                  <li><a href="tel:+380123456789" class="contact-link"><i class="fas fa-phone-alt"></i></a></li>
+                  <li><a href="https://t.me/karinka12swq" target="_blank" class="contact-link"><i
+                        class="fab fa-telegram-plane"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 position-relative">
+            <!-- Блок с маленькими картинками -->
+            <div class="small-images">
+              <img src="./img/api.jpg" alt="Телефон" class="small-image small-image-1">
+              <img src="./img/div.gif" alt="Ноутбук" class="small-image small-image-2">
+              <img src="./img/js.jpg" alt="Код" class="small-image small-image-3">
+            </div>
+            <!-- Блок с изображением GIF -->
+            <div class="hero-images">
+              <img src="./img/gige.gif" alt="GIF Image" class="animated-image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Від новачка до першої роботи в IT -->
+    <section class="path-to-it">
+      <div class="container">
+        <div class="text-center">
+          <h2 data-translate="sectionTitle">Від початківця до успішної кар'єри в IT</h2>
+          <p data-translate="sectionDescription">Чіткий план для освоєння нової професії з нуля до першої роботи в IT.
+          </p>
+        </div>
+        <div class="row text-center">
+          <!-- Перший блок -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./img/blok1/kurs.png" alt="Курси" class="card-img-top">
+              <div class="card-body">
+                <h3 data-translate="courseTitle1">Курси з нуля</h3>
+                <p data-translate="courseDesc1">Курси, які допоможуть вам освоїти базові та просунуті навички для роботи
+                  в
+                  IT. Ви зможете поступово заглиблюватись у світ програмування, набуваючи необхідних знань та
+                  впевненості.
+                </p>
+                <a href="#" class="btn btn-outline-primary" data-translate="courseBtn1">Перейти на курси</a>
+              </div>
+            </div>
+          </div>
+          <!-- Другий блок -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./img/blok1/skills.png" alt="Підготовка" class="card-img-top">
+              <div class="card-body">
+                <h3 data-translate="courseTitle2">Підготовка до співбесіди</h3>
+                <p data-translate="courseDesc2">Підготовка до співбесід, як ефективно презентувати себе роботодавцям,
+                  впевнено проходити співбесіди та допомога у створенні резюме та розвитку soft skills для успішної
+                  кар'єри.
+                </p>
+                <a href="#" class="btn btn-outline-primary" data-translate="courseBtn2">Дізнатись більше</a>
+              </div>
+            </div>
+          </div>
+          <!-- Третій блок -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./img/blok1/konst.png" alt="Консультація" class="card-img-top">
+              <div class="card-body">
+                <h3 data-translate="courseTitle3">Консультації</h3>
+                <p data-translate="courseDesc3">Я відповім на всі ваші запитання та допоможу з вибором шляху в IT. Ми
+                  разом
+                  проаналізуємо ваші сильні сторони, визначимо цілі, та складемо індивідуальний план розвитку.</p>
+                <a href="#" class="btn btn-outline-primary" data-translate="courseBtn3">Записатись на консультацію</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="courses-overview">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title" data-translate="sectionTitle">Обирайте свій шлях в IT</h2>
+          <p class="section-description" data-translate="sectionDescription">Пропоную три різних курси, які допоможуть
+            вам
+            почати або розвинути свою кар'єру в IT. Від основ до повного стеку розробки.</p>
+        </div>
+        <div class="row text-center">
+          <!-- HTML/CSS курс -->
+          <div class="col-md-4 mb-4">
+            <div class="card course-card basic">
+              <div class="card-body">
+                <h3 class="course-title" data-translate="courseTitle1">БАЗОВИЙ КУРС</h3>
+                <p class="course-description" data-translate="courseDesc1">Опануйте основи веб-розробки, вивчаючи HTML
+                  та
+                  CSS. Ідеально підходить для початківців.</p>
+                <div class="course-details">
+                  <p><strong data-translate="courseDuration1">Термін вивчення: 3 місяці</strong></p>
+                  <p><strong data-translate="coursePrice1">Вартість: 5000 грн</strong></p>
+                </div>
+                <a href="#" class="btn btn-outline-primary" data-translate="courseBtn1">Дізнатись більше</a>
+              </div>
+            </div>
+          </div>
+          <!-- HTML/CSS/JS курс -->
+          <div class="col-md-4 mb-4">
+            <div class="card course-card front-end">
+              <div class="card-body">
+                <h3 class="course-title" data-translate="courseTitle2">FRONT-END КУРС</h3>
+                <p class="course-description" data-translate="courseDesc2">Поглиблюйте свої знання, додаючи JavaScript
+                  до
+                  вашого арсеналу веб-розробника. Перший крок до інтерактивних сайтів.</p>
+                <div class="course-details">
+                  <p><strong data-translate="courseDuration2">Термін вивчення: 6 місяців</strong></p>
+                  <p><strong data-translate="coursePrice2">Вартість: 10000 грн</strong></p>
+                </div>
+                <a href="#" class="btn btn-outline-primary" data-translate="courseBtn2">Дізнатись більше</a>
+              </div>
+            </div>
+          </div>
+          <!-- HTML/CSS/JS/React/Node.js курс -->
+          <div class="col-md-4 mb-4">
+            <div class="card course-card full-stack">
+              <div class="card-body">
+                <h3 class="course-title" data-translate="courseTitle3">FULL-STACK КУРС</h3>
+                <p class="course-description" data-translate="courseDesc3">Стати повноцінним Full Stack розробником,
+                  освоюючи React та Node.js. Для тих, хто прагне стати професіоналом у створенні сучасних веб-додатків.
+                </p>
+                <div class="course-details">
+                  <p><strong data-translate="courseDuration3">Термін вивчення: 9 місяців</strong></p>
+                  <p><strong data-translate="coursePrice3">Вартість: 15000 грн</strong></p>
+                </div>
+                <a href="#" class="btn btn-outline-primary" data-translate="courseBtn3">Дізнатись більше</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="it-future">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 data-translate="sectionTitle">Ваша дорога до успіху</h2>
+          <p data-translate="sectionDescription">Перспективи та можливості в сучасній IT-індустрії для вас і для
+            України.
+          </p>
+        </div>
+        <div class="row text-center">
+          <!-- Зарплата -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="stat-card bg-light-green">
+              <h3 class="stat-title" data-translate="salary">$1500</h3>
+              <p class="stat-description" data-translate="salaryDescription">Середня заробітна плата для IT-фахівця в
+                Україні. Можливості для високих доходів і кар'єрного зростання.</p>
+            </div>
+          </div>
+          <!-- Вакансії -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="stat-card bg-light-yellow">
+              <h3 class="stat-title" data-translate="vacancies">+35 000</h3>
+              <p class="stat-description" data-translate="vacanciesDescription">Щороку з'являється нових вакансій в
+                IT-сфері. Це безмежні можливості для тих, хто хоче працювати у цій сфері.</p>
+            </div>
+          </div>
+          <!-- Віддалена робота -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="stat-card bg-light-red">
+              <h3 class="stat-title" data-translate="remoteWork">65%</h3>
+              <p class="stat-description" data-translate="remoteWorkDescription">Більшість вакансій дозволяють працювати
+                віддалено. 20% вакансій передбачають релокацію, що відкриває нові горизонти.</p>
+            </div>
+          </div>
+          <!-- Спеціалісти -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="stat-card bg-light-blue">
+              <h3 class="stat-title" data-translate="specialists">238 000</h3>
+              <p class="stat-description" data-translate="specialistsDescription">Кількість IT-фахівців в Україні.
+                Більшість
+                з них зуміла зберегти свої позиції навіть у складні часи.</p>
+            </div>
+          </div>
+          <!-- Найкращі умови -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="stat-card bg-light-purple">
+              <h3 class="stat-title" data-translate="bestConditions">37%</h3>
+              <p class="stat-description" data-translate="bestConditionsDescription">Багато IT-фахівців мають успішні
+                кар'єри без формальної технічної освіти. Ваші навички і знання мають значення.</p>
+            </div>
+          </div>
+          <!-- Освіта і навички -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="stat-card bg-light-orange">
+              <h3 class="stat-title" data-translate="educationSkills">50%</h3>
+              <p class="stat-description" data-translate="educationSkillsDescription">Приблизно половина IT-фахівців в
+                Україні має додаткові сертифікати та курси, що підтверджують їхні навички.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="course-intro">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 data-translate="introTitle">Розпочніть свою IT-кар'єру з нами</h2>
+          <p data-translate="introDescription">З радістю представляю вам нові курси, розроблені особисто мною, щоб
+            допомогти
+            вам досягти успіху в світі IT. Ці курси – ваш ключ до сучасних технологій та перспективної кар'єри.</p>
+        </div>
+        <div class="course-details">
+          <h3 class="course-heading" data-translate="whatWeOffer">Що ми пропонуємо:</h3>
+          <p class="course-description" data-translate="courseOverview">Мої курси охоплюють всі рівні навичок, від
+            початківця до професіонала. Незалежно від того, чи ви тільки починаєте свій шлях в IT, чи вже маєте базові
+            знання і хочете розвиватися далі, наші програми нададуть вам всі необхідні інструменти для успіху.</p>
+          <p class="course-description" data-translate="whatYouFind">Ось що ви знайдете в кожному з курсів:</p>
+          <ul class="course-list">
+            <li data-translate="basicCourse"><strong data-translate="basicCourseTitle">Базовий курс HTML/CSS:</strong>
+              Ідеально для новачків, які прагнуть освоїти основи веб-розробки. Вивчайте HTML та CSS, створюйте красиві
+              веб-сторінки та отримуйте фундаментальні знання для подальшого розвитку. Довжина курсу – 3 місяці,
+              вартість –
+              5000 грн.</li>
+            <li data-translate="frontEndCourse"><strong data-translate="frontEndCourseTitle">Front-end курс
+                HTML/CSS/JS:</strong> Для тих, хто хоче розширити свої навички та створювати динамічні веб-додатки. Курс
+              включає JavaScript разом з HTML і CSS, що дозволяє вам створювати інтерактивні сайти. Довжина курсу – 6
+              місяців, вартість – 10000 грн.</li>
+            <li data-translate="fullStackCourse"><strong data-translate="fullStackCourseTitle">Full-Stack курс
+                HTML/CSS/JS/React/Node.js:</strong> Вичерпний курс для тих, хто прагне стати Full Stack розробником.
+              Вивчайте як фронтенд, так і бекенд технології, включаючи React та Node.js, і освоюйте створення сучасних
+              веб-додатків. Довжина курсу – 9 місяців, вартість – 15000 грн.</li>
+          </ul>
+          <p class="course-description" data-translate="guarantee">Я гарантую якість навчання та надання актуальних
+            знань,
+            що відповідають вимогам сучасного ринку праці. Приєднуйтесь до нас і отримайте навички, які відкриють перед
+            вами
+            нові можливості!</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3 data-translate="aboutUsTitle">Про нас</h3>
+          <p data-translate="aboutUs">Ми – команда професіоналів, яка створила ці курси для того, щоб допомогти вам
+            досягти успіху в світі IT. Наші курси підходять для будь-якого рівня підготовки і забезпечують
+            найактуальніші
+            знання та навички.</p>
+        </div>
+        <div class="col-md-4">
+          <h3 data-translate="contactsTitle">Контакти</h3>
+          <ul class="footer-contact">
+            <li data-translate="phone"><i class="fa fa-phone"></i> Телефон: +38 (095) 091-31-15</li>
+            <li data-translate="email"><i class="fa fa-envelope"></i> Email: sckollHousIT@gmail.com</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3 data-translate="socialMediaTitle">Соціальні мережі</h3>
+          <ul class="footer-social">
+            <li><a href="https://facebook.com/ithous" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+            <li><a href="https://twitter.com/ithous" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+            <li><a href="https://linkedin.com/company/ithous" target="_blank"><i class="fa fa-linkedin"></i>
+                LinkedIn</a>
+            </li>
+            <li><a href="https://instagram.com/ithous" target="_blank"><i class="fa fa-instagram"></i> Instagram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <p data-translate="footerCopy">&copy; 2024 ITHous. Усі права захищені.</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="./js/modal.js"></script>
   <script src="./js/home.js"></script>
   <script src="./js/scripts.js"></script>
 </body>
