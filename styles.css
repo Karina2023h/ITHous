@@ -12,7 +12,6 @@
   justify-content: space-between;
   padding: 10px 20px;
   height: 80px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .header .logo {
@@ -158,12 +157,12 @@ form {
 }
 
 .nav-link {
-  color: #6f42c1;
+  color: #ffffff;
   /* Фиолетовый цвет текста для неактивных вкладок */
 }
 
 .nav-link:hover {
-  color: #5a2a91;
+  color: #ffffff;
   /* Темнее фиолетовый при наведении на вкладки */
 }
 
