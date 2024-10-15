@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Front-end Курс</title>
+  <link rel="icon" href="./logo/lg.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="/manifest.json">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Popper.js 1.x -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css" />
+</head>
+
+<body class="home-page">
+  <div class="main-container">
+    <header class="header">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <!-- Логотип -->
+          <div class="logo">
+            <a href="index.html">
+              <img src="./logo/lg.png" alt="Логотип" class="logo-img">
+            </a>
+          </div>
+          <!-- Навигационное меню -->
+          <nav class="navbar navbar-expand-md">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-translate="home">Головна</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-translate="courses">Курси</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-translate="reviews">Відгуки</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-translate="contacts">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Контейнер для кнопки входа и выбора языка -->
+          <div class="d-flex align-items-center">
+            <!-- Кнопка авторизации -->
+            <div class="login-button">
+              <a href="login.html" target="_blank" class="btn btn-primary btn-icon" data-translate="login">
+                <i class="fas fa-user"></i> Вхід
+              </a>
+            </div>
+            <!-- Выбор языка -->
+            <div class="dropdown language-dropdown ml-3">
+              <button class="btn btn-primary dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <span id="selected-language">Uk</span>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                <a class="dropdown-item" href="#" data-lang="uk">Uk</a>
+                <a class="dropdown-item" href="#" data-lang="ru">Ru</a>
+                <a class="dropdown-item" href="#" data-lang="en">En</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="course-full" style="background-color: #6a0dad; color: white;">
+      <div class="container" style="padding-top: 45px; display: flex;">
+        <div class="div" style="margin-top: 40px;">
+          <p class="parf">Онлайн</p>
+          <h1 class="titlefull"> Курс Front-end</h1>
+          <p class="subtitlefull">Створюй та опануй сучасні веб сайти з нуля, додаючи JavaScript до вашого арсеналу
+            веб-розробника.</p>
+          <a style="border-radius: 18px;" href="#" class="btn btn-outline-light btn-lg mt-3">Записатись на курс</a>
+        </div>
+        <div class="div" style="margin-top: -40px;">
+          <img src="./img/caf.png" width="470" height="470">
+        </div>
+      </div>
+    </section>
+    <section class="course-info py-5" style="background-color: #6a0dad; color: white; margin-top: 60px;">
+      <div class="container text-center">
+        <h2 style="font-size: 3rem;">Front-end онлайн курс</h2>
+        <p style="margin-top: 12px;">
+          Опануй професію Front-end розробника, де ти зможеш займатися у вільний час. Якщо ти прагнеш швидше
+          потрапити в IT-сферу, залиш заявку, і ми допоможемо тобі підібрати найкращий варіант навчання.
+        </p>
+        <a style="border-radius: 18px;" href="#" class="btn btn-outline-light btn-lg mt-3">Записатись на курс</a>
+      </div>
+    </section>
+    <section class="courfull">
+      <div class="container">
+        <h1 class="textfull">Програма курсу</h1>
+        <p class="textfull1">Що потрібно знати Front-end розробнику? Відповіді нижче</p>
+        <div class="card mb-3">
+          <div class="card-header d-flex justify-content-between align-items-center"
+            style="background: linear-gradient(135deg, #6a0dad, #9509a1); color: white; border-radius: 15px; height: 80px;">
+            <span style="font-size: 22px;">HTML та CSS</span>
+            <span class="topics-count"
+              style="font-size: 18px; border: 1px solid #f1f2f5; color: #151515; cursor: pointer; padding: 6px 12px; border-radius: 20px; background-color: white;">Теми:
+              9 <i class="fas fa-chevron-down"></i></span>
+          </div>
+          <div class="card-body1" style="display: none;">
+            <ul>
+              <li>Основи HTML: Теги та атрибути</li>
+              <li>CSS селектори та колір</li>
+              <li>Оформлення тексту й шрифти</li>
+              <li>Блочна модель. Flexbox</li>
+              <li>Фон і декоративні елементи</li>
+              <li>Позиціонування елементів</li>
+              <li>Трансформації. Переходи та анімація.Форми</li>
+              <li>Респонсівна верстка та адаптивна графіка</li>
+              <li>1 особистий проєкт</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- JavaScript блок -->
+        <div class="card mb-3">
+          <div class="card-header d-flex justify-content-between align-items-center"
+            style="background: linear-gradient(135deg, #6a0dad, #9509a1); color: white; border-radius: 15px; height: 80px;">
+            <span style="font-size: 22px;">JavaScript</span>
+            <span class="topics-count"
+              style="font-size: 18px;border: 1px solid #f1f2f5; color: #151515; cursor: pointer; padding: 6px 12px; border-radius: 20px; background-color: white;">Теми:
+              16 <i class="fas fa-chevron-down"></i></span>
+          </div>
+          <div class="card-body1" style="display: none;">
+            <ul>
+              <li>Змінні та типи данних</li>
+              <li>Оператори</li>
+              <li>Цикли</li>
+              <li>Введення в функції</li>
+              <li>Замикання, коллбеки, функції</li>
+              <li>Стрілкові функції</li>
+              <li>Array та Object. DOM та Events</li>
+              <li>Об'єкт Event, Фази подій, Делегування. BOM.</li>
+              <li>Форми та регулярні вирази</li>
+              <li>Coding Best Practices та чистий код та WebStorage</li>
+              <li>Об'єктно-орієнтований JavaScript</li>
+              <li>Класи</li>
+              <li>Ведення в Асинхронність, Event Loop та Promise</li>
+              <li>Ajax та async…await</li>
+              <li>EcmaScript та Babel</li>
+              <li>1 особистий проєкт</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="course-enrollment py-5" style="background-color: #6a0dad; color: white;">
+      <div class="container text-center">
+        <h2 style="font-size: 3rem;">Готові приєднатися?</h2>
+        <p style="font-size: 19px;">Заповніть форму нижче і розпочніть свою подорож у світ веб-розробки!</p>
+        <button style="border-radius: 18px; padding: 10px 30px;" class="btn btn-outline-light btn-lg mt-3"
+          onclick="openModal()">Зареєструватись зараз</button>
+      </div>
+    </section>
+    <section class="faq-section">
+      <div class="faq-container">
+        <h2>Питання й Відповіді</h2>
+
+        <div class="faq-item">
+          <h3>Чи є можливість оплатити курс частинами?
+            <span class="arrow">&#9654;</span>
+          </h3>
+          <p>Так, є. Ми допоможемо вам знайти зручний спосіб оплати через банки-партнери. Для цього зв'яжіться з нашим
+            консультантом за номером: +38 (095) 091-31-45.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Чому курс триває аж 6 місяців?
+            <span class="arrow">&#9654;</span>
+          </h3>
+          <p>Протягом цього курсу ви опануєте професію – Frontend. Крім того, вас очікують заняття з
+            розвитку soft skills, підготовка до працевлаштування. Ми прагнемо, щоб після завершення
+            курсу ви швидко знайшли роботу в IT<br>
+            Зверніть увагу, що навчання проводиться в режимі part-time – по 2-4 години на день із вільними вихідними.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Як організувати своє навчання і як проходить курс?
+            <span class="arrow">&#9654;</span>
+          </h3>
+          <p>Навчання структуроване за модулями: кожен модуль триває один тиждень. Раз на тиждень ввечері ви будете
+            переглядати вебінари, а у вільний час виконувати домашні завдання.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Що робити, якщо пропущу заняття?
+            <span class="arrow">&#9654;</span>
+          </h3>
+          <p>Усі матеріали будуть доступні у вашому робочому профілі. Якщо ви пропустите вебінар, його можна буде
+            переглянути у записі.</p>
+        </div>
+
+        <div class="contact-section">
+          <p>Якщо ще залишились питання, замов безкоштовну консультацію</p>
+          <a href="tel:+380673269592">Зателефонувати консультанту</a>
+        </div>
+      </div>
+    </section>
+    <footer style="margin-top: 60px;" class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3 data-translate="aboutUsTitle">Про нас</h3>
+            <p data-translate="aboutUs">Ми – команда професіоналів, яка створила ці курси для того, щоб допомогти вам
+              досягти успіху в світі IT. Наші курси підходять для будь-якого рівня підготовки і забезпечують
+              найактуальніші
+              знання та навички.</p>
+          </div>
+          <div class="col-md-4">
+            <h3 data-translate="contactsTitle">Контакти</h3>
+            <ul class="footer-contact">
+              <li data-translate="phone"><i class="fa fa-phone"></i> Телефон: +38 (095) 091-31-15</li>
+              <li data-translate="email"><i class="fa fa-envelope"></i> Email: sckollHousIT@gmail.com</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h3 data-translate="socialMediaTitle">Соціальні мережі</h3>
+            <ul class="footer-social">
+              <li><a href="https://facebook.com/ithous" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+              <li><a href="https://twitter.com/ithous" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+              <li><a href="https://linkedin.com/company/ithous" target="_blank"><i class="fa fa-linkedin"></i>
+                  LinkedIn</a>
+              </li>
+              <li><a href="https://instagram.com/ithous" target="_blank"><i class="fa fa-instagram"></i> Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <p data-translate="footerCopy">&copy; 2024 ITHous. Усі права захищені.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Модальне вікно -->
+    <div id="registrationModal" class="modal"
+      style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100%; height:100%; overflow:auto; background-color:rgba(0, 0, 0, 0.5);">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Записатись на курс</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" class="form-control" placeholder="Ваше ім'я" required>
+          </div>
+
+          <div class="form-group mt-3">
+            <label for="phone">Номер телефону:</label>
+            <div style="display: flex; gap: 10px; align-items: center;">
+              <input style="width:300px ;" type="tel" id="phone" class="form-control" placeholder="Ваш номер телефону"
+                required>
+            </div>
+          </div>
+
+          <div class="form-group mt-3">
+            <label for="email">Адреса електронної пошти:</label>
+            <input type="email" id="email" class="form-control" placeholder="Ваш email" required>
+          </div>
+
+          <button type="submit" class="btn btn-primary mt-4">Відправити</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $(".card-header").click(function () {
+          $(this).next(".card-body1").slideToggle();
+          $(this).find("i").toggleClass("fa-chevron-down fa-chevron-up");
+        });
+      });
+    </script>
+    <script src="./js/srct.js"></script>
+    <script src="./js/home.js"></script>
+    <script src="./js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <!-- Підключення бібліотек intl-tel-input та JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script>
+      // Відкриття модального вікна
+      function openModal() {
+        document.getElementById("registrationModal").style.display = "block";
+      }
+
+      // Закриття модального вікна
+      function closeModal() {
+        document.getElementById("registrationModal").style.display = "none";
+      }
+
+      // Закриття модального вікна при кліку поза вікном
+      window.onclick = function (event) {
+        var modal = document.getElementById("registrationModal");
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+
+      // Ініціалізація бібліотеки intl-tel-input для номера телефону
+      var input = document.querySelector("#phone");
+      window.intlTelInput(input, {
+        initialCountry: "auto",
+        geoIpLookup: function (callback) {
+          fetch("https://ipinfo.io/json?token=your_token") // Можна замінити на реальний токен IPinfo
+            .then((response) => response.json())
+            .then((data) => {
+              var countryCode = data && data.country ? data.country : "us";
+              callback(countryCode);
+            });
+        },
+        utilsScript:
+          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js", // для обробки формату номера
+      });
+    </script>
+</body>
+
+</html>

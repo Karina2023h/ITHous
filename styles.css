@@ -7,7 +7,7 @@ html {
 /* Основные стили для хедера */
 /* Основні стилі для хедера */
 .header {
-  background: #6a0dad;
+  background: linear-gradient(135deg, #ba87dc, #7d2385);
   /* Фіолетовий фон */
   color: white;
   display: flex;
@@ -26,6 +26,7 @@ html {
   height: 140px;
   /* Зменшений розмір логотипу */
   width: auto;
+
   margin-top: -17px;
 }
 
